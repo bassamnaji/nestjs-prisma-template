@@ -1,0 +1,13 @@
+{
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": "../src",
+  "testEnvironment": "node",
+  "testRegex": "service.spec.ts$",
+  "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+      "^axios$": "axios/dist/axios.min.js",
+      "@src/(.*)": "../src/$1"
+  }
+}
