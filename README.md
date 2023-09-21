@@ -37,7 +37,7 @@ $ docker compose up
 
 ## Support
 
-Leave a ⭐ if you find it useful 😃
+Leave ⭐ if you find it useful 😃
 
 ## License
 
