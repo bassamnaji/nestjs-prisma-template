@@ -35,6 +35,10 @@ $ docker compose up
 
 - Author - [Bassam Naji](https://bassamnaji.com)
 
+## Support
+
+Leave a ⭐ if you find it useful 😃
+
 ## License
 
 This template is under [MIT licensed](LICENSE).
