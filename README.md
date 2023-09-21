@@ -12,18 +12,23 @@ Template built on [Nestjs](https://github.com/nestjs/nest) framework with [Prism
 ## Installation
 **NOTE:** Make sure you have Docker installed.
 ```bash
-$ sudo apt install make -y # If you want to use the make command for shortcuts
+# If you want to use the make command for shortcuts
+$ sudo apt install make -y
+
+# generate '.env' file
 $ cp .env.example .env
 ```
 
 ## Running the app
 
 ```bash
-# run the app
+# run the app using 'make' command
 $ make up
+
+# run the app using docker directly
 $ docker compose up
 
-# Check the Makefile for more information about the commands you can run
+# Check out the Makefile for more information about what commands you can run
 ```
 
 ## Stay in touch
