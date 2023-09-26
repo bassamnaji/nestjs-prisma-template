@@ -1,30 +1,37 @@
 BACKEND_SERVICE=backend
 DB_SERVICE=db
+COMPOSE:=
+
+ifeq (, $(shell command -v docker-compose))
+	COMPOSE += docker compose
+else
+	COMPOSE += docker-compose
+endif
 
 up:
-		docker compose up --build
+		$(COMPOSE) up --build
 
 upd:
-		docker compose up --build -d
+		$(COMPOSE) up --build -d
 
 down:
-		docker compose down -v
+		$(COMPOSE) down
 
 downv:
-		docker compose down -v
+		$(COMPOSE) down -v
 
 re: dev-down dev
 
 ve: dev-down dev
 
 logs:
-		docker compose logs -f
+		$(COMPOSE) logs -f
 
 ps:
-		docker compose ps
+		$(COMPOSE) ps
 
 backend:
-		docker compose exec -it ${BACKEND_SERVICE} bash
+		$(COMPOSE) exec -it ${BACKEND_SERVICE} bash
 
 db:
-		docker compose exec -it ${DB_SERVICE} bash
+		$(COMPOSE) exec -it ${DB_SERVICE} bash
