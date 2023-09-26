@@ -2,7 +2,7 @@ BACKEND_SERVICE=backend
 DB_SERVICE=db
 COMPOSE:=
 
-ifeq (, $(shell command -v docker-compose))
+ifneq ($(shell docker compose version 2>/dev/null),)
 	COMPOSE += docker compose
 else
 	COMPOSE += docker-compose
