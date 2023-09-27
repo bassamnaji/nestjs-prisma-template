@@ -28,6 +28,9 @@ $ make up
 # run the app using docker directly
 $ docker compose up
 
+# if you're running compose V1
+$ docker-compose up
+
 # Check out the Makefile for more information about what commands you can run
 ```
 
